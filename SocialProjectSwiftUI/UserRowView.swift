@@ -37,16 +37,21 @@ struct UserRowView: View {
         }
         .navigationBarHidden(false)
         .navigationTitle("friends")
-//            .toolbar{
-//                ToolbarItemGroup(placement: .navigationBarTrailing){
-//                    NavigationLink("groups") {
-//                        GroupViewRow()
-//                    }
-//                    
-//                    }
-//                }
+            .toolbar{
+                ToolbarItemGroup(placement: .navigationBarLeading){
+                    NavigationLink("groups", destination: GroupRowView())
+                     //{
+                        
+                     //    GroupRowView()
+                     //}
+//                     NavigationLink("news") {
+//                         NewsView()
+//                     }
+                 }
+                
             }
         }
+    }
 }
 // MARK: - ViewBuilders
 
