@@ -9,16 +9,16 @@ import SwiftUI
 
 struct AppView: View {
     
-    @State private var shouldShowUserView: Bool = false
+    @State private var shouldShowMenuView: Bool = false
     
     var body: some View {
         NavigationView {
             HStack {
-                LoginScreenView(showUserView: $shouldShowUserView)
+                LoginScreenView(showUserView: $shouldShowMenuView)
                 
                 NavigationLink(
-                    destination: UserRowView(),
-                    isActive: $shouldShowUserView,
+                    destination: MenuView(),
+                    isActive: $shouldShowMenuView,
                     label: {
                         EmptyView()
                     })

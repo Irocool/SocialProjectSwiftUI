@@ -10,10 +10,14 @@
 		594CBD7127D6485C00D6102D /* SocialProjectSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594CBD7027D6485C00D6102D /* SocialProjectSwiftUIApp.swift */; };
 		594CBD7527D6486C00D6102D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594CBD7427D6486C00D6102D /* Assets.xcassets */; };
 		594CBD7827D6486C00D6102D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594CBD7727D6486C00D6102D /* Preview Assets.xcassets */; };
+		595734E427F9E92B00828C02 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595734E327F9E92B00828C02 /* MenuView.swift */; };
 		5959FAFA27F4E2DD00145E36 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959FAF927F4E2DD00145E36 /* AppView.swift */; };
 		5959FAFF27F4F00100145E36 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959FAFE27F4F00100145E36 /* UserModel.swift */; };
 		596417A327F56D33009DF028 /* GroupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596417A227F56D33009DF028 /* GroupRowView.swift */; };
 		596417A827F57493009DF028 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596417A727F57493009DF028 /* GroupModel.swift */; };
+		596417AD27F8A829009DF028 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596417AC27F8A829009DF028 /* NewsModel.swift */; };
+		596417B027F8AA35009DF028 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596417AF27F8AA35009DF028 /* NewsView.swift */; };
+		596417B327F8AAFB009DF028 /* DetailNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596417B227F8AAFB009DF028 /* DetailNewsView.swift */; };
 		59F80EEC27F0E9F200B74A72 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F80EEB27F0E9F200B74A72 /* LoginScreenView.swift */; };
 		59F80EEF27F0EA2C00B74A72 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F80EEE27F0EA2C00B74A72 /* UserRowView.swift */; };
 		59F80EF227F0EA5D00B74A72 /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F80EF127F0EA5D00B74A72 /* ViewBuilders.swift */; };
@@ -26,10 +30,14 @@
 		594CBD7427D6486C00D6102D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594CBD7727D6486C00D6102D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		594CBD7927D6486C00D6102D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595734E327F9E92B00828C02 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5959FAF927F4E2DD00145E36 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		5959FAFE27F4F00100145E36 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		596417A227F56D33009DF028 /* GroupRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRowView.swift; sourceTree = "<group>"; };
 		596417A727F57493009DF028 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		596417AC27F8A829009DF028 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		596417AF27F8AA35009DF028 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		596417B227F8AAFB009DF028 /* DetailNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsView.swift; sourceTree = "<group>"; };
 		59F80EEB27F0E9F200B74A72 /* LoginScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		59F80EEE27F0EA2C00B74A72 /* UserRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		59F80EF127F0EA5D00B74A72 /* ViewBuilders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
@@ -77,6 +85,9 @@
 				594CBD7927D6486C00D6102D /* Info.plist */,
 				594CBD7627D6486C00D6102D /* Preview Content */,
 				5959FAF927F4E2DD00145E36 /* AppView.swift */,
+				596417AF27F8AA35009DF028 /* NewsView.swift */,
+				596417B227F8AAFB009DF028 /* DetailNewsView.swift */,
+				595734E327F9E92B00828C02 /* MenuView.swift */,
 			);
 			path = SocialProjectSwiftUI;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 			children = (
 				5959FAFE27F4F00100145E36 /* UserModel.swift */,
 				596417A727F57493009DF028 /* GroupModel.swift */,
+				596417AC27F8A829009DF028 /* NewsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,13 +180,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F80EF227F0EA5D00B74A72 /* ViewBuilders.swift in Sources */,
+				596417B027F8AA35009DF028 /* NewsView.swift in Sources */,
 				5959FAFF27F4F00100145E36 /* UserModel.swift in Sources */,
 				596417A827F57493009DF028 /* GroupModel.swift in Sources */,
 				59F80EEC27F0E9F200B74A72 /* LoginScreenView.swift in Sources */,
+				596417AD27F8A829009DF028 /* NewsModel.swift in Sources */,
 				5959FAFA27F4E2DD00145E36 /* AppView.swift in Sources */,
+				595734E427F9E92B00828C02 /* MenuView.swift in Sources */,
 				59F80EF527F0EA8800B74A72 /* ViewModifiers.swift in Sources */,
 				596417A327F56D33009DF028 /* GroupRowView.swift in Sources */,
 				59F80EEF27F0EA2C00B74A72 /* UserRowView.swift in Sources */,
+				596417B327F8AAFB009DF028 /* DetailNewsView.swift in Sources */,
 				594CBD7127D6485C00D6102D /* SocialProjectSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

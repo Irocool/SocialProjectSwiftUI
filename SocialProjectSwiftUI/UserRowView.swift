@@ -15,14 +15,15 @@ struct UserRowView: View {
 
 // MARK: - Body
     var body: some View {
+        
         NavigationView {
             List(users, id: \.id) { user in
                 HStack {
             
-                AvatarImage {
-                    Image(user.avatarImageName)
-                        .resizable()
-                }
+                    AvatarImage {
+                        Image(user.avatarImageName)
+                            .resizable()
+                    }
             
                 VStack(alignment: .leading) {
                 
@@ -33,24 +34,13 @@ struct UserRowView: View {
                         .font(.system(size: 12))
                 }
                 Spacer()
-            }
+               }
+           }
+
+            .navigationBarHidden(false)
+                .navigationBarTitle("friends", displayMode: .inline)
         }
-        .navigationBarHidden(false)
-        .navigationTitle("friends")
-            .toolbar{
-                ToolbarItemGroup(placement: .navigationBarLeading){
-                    NavigationLink("groups", destination: GroupRowView())
-                     //{
-                        
-                     //    GroupRowView()
-                     //}
-//                     NavigationLink("news") {
-//                         NewsView()
-//                     }
-                 }
-                
-            }
-        }
+
     }
 }
 // MARK: - ViewBuilders
