@@ -11,7 +11,7 @@ import SwiftUI
 struct SocialProjectSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginScreenView()
+            AppView()
         }
     }
 }

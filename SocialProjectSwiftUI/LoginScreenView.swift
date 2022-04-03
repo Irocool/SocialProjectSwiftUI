@@ -9,9 +9,11 @@ import SwiftUI
 import Combine
 
 struct LoginScreenView: View {
-    @State private var login = ""
-    @State private var password = ""
+    @State private var login = "Admin"
+    @State private var password = "Admin"
+    @State private var showIncorrectCredentialAlert: Bool = false
     @State private var shouldShowLogo: Bool = true
+    @Binding var showUserView: Bool
     
     private let keyboardIsOnPublisher = Publishers.Merge( NotificationCenter.default.publisher(for:
     UIResponder.keyboardWillChangeFrameNotification)
@@ -58,7 +60,7 @@ struct LoginScreenView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
 
                 }
-                Button(action: { print("Hello") }) {
+                Button(action: self.onLoginPressed) {
                      Text("Log in")
                 } .padding(.top, 50)
                 .padding(.bottom, 20)
@@ -72,17 +74,28 @@ struct LoginScreenView: View {
             }
         }
 
-    }.onTapGesture {
-        UIApplication.shared.endEditing()
-
-    }
+        }.onTapGesture {
+            UIApplication.shared.endEditing()
+        }
+        .alert(isPresented: $showIncorrectCredentialAlert) {
+                        Alert(
+                    title: Text("Error"),
+                    message: Text("Incorrect login or password. Try again"),
+                    dismissButton: .cancel()
+                    )
+        }
   }
 
+
+    private func onLoginPressed(){
+        if login == "Admin" && password == "Admin" {
+            self.showUserView = true
+            print ("Hello")
+        } else {
+            self.showIncorrectCredentialAlert = true
+        }
+    }
 }
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
 extension UIApplication { func endEditing() {
 sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
 } }
